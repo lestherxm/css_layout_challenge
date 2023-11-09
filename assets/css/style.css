@@ -1,0 +1,154 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%; /*1rem = 10px*/
+}
+
+.header{
+    background-color: pink;
+    width: 100dvw;
+    height: 10dvh;
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    user-select: none;
+}
+
+.nav{
+    list-style: none;
+}
+
+.nav li{
+    display: inline-block;
+    margin: 0rem 1rem;
+    cursor: pointer;
+}
+
+.logo-img{
+    position: absolute;
+    top: 0.4rem;
+    left: 7rem;
+    width: 6rem;
+}
+
+.container{
+    width: 100dvw;
+    height: 80dvh;
+    background-color: peachpuff;
+    display: flex;
+}
+
+.aside-bar{
+    background-color: peru;
+    width: 22rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 2.5rem;
+}
+
+.article-item{
+    background-color: plum;
+    width: 20rem;
+    height: 10rem;
+    margin: 1rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+.article-item--active{
+    background-color: rgb(143, 48, 143);
+    color: white;
+}
+
+.article-item__img{
+    width: 30%;
+}
+
+.displayed-content{
+    font-size: 2rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    overflow-y: auto;
+}
+
+.footer{
+    background-color: pink;
+    width: 100dvw;
+    height: 10dvh;
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.target{
+    width: 20rem;
+    height: 30rem;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    position: relative;
+    margin: 1rem;
+}
+
+.target img{
+    width: 80%;
+}
+
+.target__options{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    background-color: rgb(181, 177, 177);
+    position: absolute;
+    bottom: -8px;
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.target__options img{
+    width: 2.5rem;
+    cursor: pointer;
+}
+
+.price{
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+.description{
+    margin-top: 1rem;
+}
+
+.social-media, .sponsors{
+    width: 50%;
+    max-width: 20rem;
+    display: flex;
+    justify-content: start;
+}
+
+.social-media__item img, .sponsor__item img{
+    width: 3rem;
+    margin-left: 2rem;
+    cursor: pointer;
+}
+
